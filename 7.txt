@@ -1,0 +1,22 @@
+USE [elibraryDB]
+GO
+
+/****** Object:  Table [dbo].[publisher_master_tbl]    Script Date: 2/1/2023 4:48:42 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[publisher_master_tbl](
+	[publisher_id] [nchar](10) NOT NULL,
+	[publisher_name] [nvarchar](max) NULL,
+	[Status] [int] NULL,
+	[id] [int] NULL,
+ CONSTRAINT [PK_publisher_master_tbl] PRIMARY KEY CLUSTERED 
+(
+	[publisher_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
